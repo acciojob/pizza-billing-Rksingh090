@@ -1,5 +1,7 @@
 package com.driver;
 
+import org.jetbrains.annotations.NotNull;
+
 public class Pizza {
 
     private int price;
@@ -20,6 +22,7 @@ public class Pizza {
     public Pizza(Boolean isVeg, Boolean Deluxe){
         this.isVeg = isVeg;
         this.isDeluxe = Deluxe;
+
         if(isVeg) this.price = 300;
         else this.price = 400;
     }
@@ -32,12 +35,11 @@ public class Pizza {
         // your code goes here
         if(!isDeluxe)
             this.cheesePrice = 80;
-
     }
 
     public void addExtraToppings(){
         // your code goes here
-        if(!isDeluxe) {
+        if(!isDeluxe && cheesePrice > 0) {
             if (isVeg) this.toppingPrice = 70;
             else this.toppingPrice = 120;
         }

@@ -10,7 +10,6 @@ public class Main {
     dp.addTakeaway();
     System.out.println(dp.getBill());
 
-
     Pizza p = new Pizza(false);
     p.addExtraToppings();
     p.addExtraCheese();
