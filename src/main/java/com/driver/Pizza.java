@@ -56,7 +56,7 @@ public class Pizza {
         if(cheesePrice > 0) ans += "Extra Cheese Added: "+cheesePrice+"\n";
         if(toppingPrice > 0) ans += "Extra Toppings Added: "+toppingPrice+"\n";
         if(addTakeaway > 0) ans += "Paperbag Added: "+addTakeaway+"\n";
-        ans += "Total Price: "+(price+cheesePrice+toppingPrice+addTakeaway);
+        ans += "Total Price: "+(price+cheesePrice+toppingPrice+addTakeaway)+"\n";
         return ans;
     }
 }
